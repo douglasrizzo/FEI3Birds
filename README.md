@@ -13,13 +13,13 @@ Given a bird _b_ and a set of objects _O<sub>t</sub>_ that cross trajectory _t_,
 
 where _A_ is a matrix containing the weights associated between bird types and obstacle types:
 
-![Weight matrix](http://www.sciweavers.org/tex2img.php?eq=A%3D%0A%5Cbegin%7Bbmatrix%7D%0A1%20%26%206%20%26%202%20%26%20%5Cinfty%20%5C%5C%0A3%20%26%201%20%26%206%20%26%20%5Cinfty%20%5C%5C%0A1%20%26%206%20%26%203%20%26%20%5Cinfty%20%5C%5C%0A%5Cend%7Bbmatrix%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+<!-- ![Weight matrix](http://www.sciweavers.org/tex2img.php?eq=A%3D%0A%5Cbegin%7Bbmatrix%7D%0A1%20%26%206%20%26%202%20%26%20%5Cinfty%20%5C%5C%0A3%20%26%201%20%26%206%20%26%20%5Cinfty%20%5C%5C%0A1%20%26%206%20%26%203%20%26%20%5Cinfty%20%5C%5C%0A%5Cend%7Bbmatrix%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) -->
 
 In _A_, rows represent red, blue and yellow birds and columns represent wood, ice, stone and unbreakable obstacles, respectively.
 
 The optimal trajectory _t*_ is chosen from the set _T_ of all possible trajectories between the current bird and all pigs as the one that minimizes the resistance function:
 
-![Preference function](http://www.sciweavers.org/tex2img.php?eq=t%2A%20%3D%20argmin_%7Bt%20%5Cin%20T%7D%20%20R_t&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+<!-- ![Preference function](http://www.sciweavers.org/tex2img.php?eq=t%2A%20%3D%20argmin_%7Bt%20%5Cin%20T%7D%20%20R_t&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0) -->
 
 ## Architecture
 
