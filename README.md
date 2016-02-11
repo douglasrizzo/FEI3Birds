@@ -9,17 +9,17 @@ It is an agent that collects a low and a high trajectory from the bird to every 
 
 Given a bird _b_ and a set of objects _O<sub>t</sub>_ that cross trajectory _t_, the total resistance _R_ of _t_ is given by:
 
-![R_t = \sum_ {o \in O_t} A[b, o]](http://www.sciweavers.org/tex2img.php?eq=R_t%20%3D%20%5Csum_%20%7Bo%20%5Cin%20O_t%7D%20A%5Bb%2C%20o%5D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+![Resistance function](http://www.sciweavers.org/tex2img.php?eq=R_t%20%3D%20%5Csum_%20%7Bo%20%5Cin%20O_t%7D%20A%5Bb%2C%20o%5D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
 
 where _A_ is a matrix containing the weights associated between bird types and obstacle types:
 
-![\begin{bmatrix}1 & 6 & 2 & \infty \\3 & 1 & 6 & \infty \\1 & 6 & 3 & \infty \\\end{bmatrix}](http://www.sciweavers.org/tex2img.php?eq=A%3D%0A%5Cbegin%7Bbmatrix%7D%0A1%20%26%206%20%26%202%20%26%20%5Cinfty%20%5C%5C%0A3%20%26%201%20%26%206%20%26%20%5Cinfty%20%5C%5C%0A1%20%26%206%20%26%203%20%26%20%5Cinfty%20%5C%5C%0A%5Cend%7Bbmatrix%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+![Weight matrix](http://www.sciweavers.org/tex2img.php?eq=A%3D%0A%5Cbegin%7Bbmatrix%7D%0A1%20%26%206%20%26%202%20%26%20%5Cinfty%20%5C%5C%0A3%20%26%201%20%26%206%20%26%20%5Cinfty%20%5C%5C%0A1%20%26%206%20%26%203%20%26%20%5Cinfty%20%5C%5C%0A%5Cend%7Bbmatrix%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
 
 In _A_, rows represent red, blue and yellow birds and columns represent wood, ice, stone and unbreakable obstacles, respectively.
 
-The chosen trajectory _t_ is chosen from the set _T_ of all possible trajectories between the current bird and all pigs as the one that minimizes the resistance function:
+The optimal trajectory _t*_ is chosen from the set _T_ of all possible trajectories between the current bird and all pigs as the one that minimizes the resistance function:
 
-![t* = argmin_{t \in T} \quad R_t](http://www.sciweavers.org/tex2img.php?eq=t%2A%20%3D%20argmin_%7Bt%20%5Cin%20T%7D%20%20R_t&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+![Preference function](http://www.sciweavers.org/tex2img.php?eq=t%2A%20%3D%20argmin_%7Bt%20%5Cin%20T%7D%20%20R_t&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
 
 ## Architecture
 
