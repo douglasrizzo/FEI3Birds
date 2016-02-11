@@ -19,7 +19,7 @@ In _A_, rows represent red, blue and yellow birds and columns represent wood, ic
 
 The optimal trajectory _t*_ is chosen from the set _T_ of all possible trajectories between the current bird and all pigs as the one that minimizes the resistance function:
 
-![t* = argmin_{t \in T} \quad R_t](http://latex.numberempire.com/render?t*%20%3D%20argmin_{t%20\in%20T}%20\quad%20R_t&sig=086f5680a4b9c10d7e8eb2da01e1878b)
+![t* = argmin_{t \in T} \quad R_t](http://latex.numberempire.com/render?t%2A%20%3D%20argmin_%7Bt%20%5Cin%20T%7D%20R_t&sig=f059abe745c49e48d68e9501fc26fefa)
 
 ## Architecture
 
