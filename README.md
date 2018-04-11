@@ -13,13 +13,13 @@ Given a bird _b_ and a set of objects _O<sub>t</sub>_ that cross trajectory _t_,
 
 where _A_ is a matrix containing the weights associated between bird types and obstacle types:
 
-![\begin{bmatrix}1 & 6 & 2 & \infty \\3 & 1 & 6 & \infty \\1 & 6 & 3 & \infty \\\end{bmatrix}](http://latex.numberempire.com/render?A%20%3D%20%5Cbegin%7Bbmatrix%7D1%20%26%206%20%26%202%20%26%20%5Cinfty%20%5C%5C3%20%26%201%20%26%206%20%26%20%5Cinfty%20%5C%5C1%20%26%206%20%26%203%20%26%20%5Cinfty%20%5C%5C%5Cend%7Bbmatrix%7D&sig=a85a786ead8b04d620fccb131220d8ef)
+![\begin{bmatrix}1 & 6 & 2 & \infty \\3 & 1 & 6 & \infty \\1 & 6 & 3 & \infty \\\end{bmatrix}](https://latex.codecogs.com/gif.latex?\begin{bmatrix}1&space;&&space;6&space;&&space;2&space;&&space;\infty&space;\\\\3&space;&&space;1&space;&&space;6&space;&&space;\infty&space;\\\\1&space;&&space;6&space;&&space;3&space;&&space;\infty&space;\end{bmatrix})
 
 In _A_, rows represent red, blue and yellow birds and columns represent wood, ice, stone and unbreakable obstacles, respectively.
 
 The optimal trajectory _t*_ is chosen from the set _T_ of all possible trajectories between the current bird and all pigs as the one that minimizes the resistance function:
 
-![t* = argmin_{t \in T} \quad R_t](http://latex.numberempire.com/render?t%2A%20%3D%20argmin_%7Bt%20%5Cin%20T%7D%20R_t&sig=f059abe745c49e48d68e9501fc26fefa)
+![t* = argmin_{t \in T} \quad R_t](https://latex.codecogs.com/gif.latex?t^*&space;=&space;argmin_{t&space;\in&space;T}&space;\quad&space;R_t)
 
 ## Architecture
 
