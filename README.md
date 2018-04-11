@@ -9,7 +9,7 @@ It is an agent that collects a low and a high trajectory from the bird to every 
 
 Given a bird _b_ and a set of objects _O<sub>t</sub>_ that cross trajectory _t_, the total resistance _R_ of _t_ is given by:
 
-![R_t = \sum_ {o \in O_t} A[b, o]](http://latex.numberempire.com/render?R_t%20%3D%20%5Csum_%20%7Bo%20%5Cin%20O_t%7D%20A%5Bb%2C%20o%5D&sig=6b76d502b2484cd02860dc5bb17f8bdf)
+![R_t = \sum_ {o \in O_t} A[b, o]](https://latex.codecogs.com/gif.latex?R_t&space;=&space;\sum_&space;{o&space;\in&space;O_t}&space;A[b,&space;o])
 
 where _A_ is a matrix containing the weights associated between bird types and obstacle types:
 
